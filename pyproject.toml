@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offshore-wind-lstm"
+version = "1.0.0"
+description = "ERA5/GFS offshore wind power LSTM models and weather-input attribution"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = ["numpy>=2,<3", "pandas>=2.2,<4", "torch>=2.5,<3"]
+
+[project.optional-dependencies]
+download = ["xarray>=2025.1", "icechunk>=2.2", "zarr>=3.1", "pcodec", "scipy>=1.14", "requests>=2.32", "eccodes>=2.40"]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[project.scripts]
+windpower = "windpower.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 115
+target-version = "py311"

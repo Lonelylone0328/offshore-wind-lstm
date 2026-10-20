@@ -1,0 +1,17 @@
+{
+  "kind": "gfs",
+  "checkpoints": [
+    "20260991.pt",
+    "20260992.pt",
+    "20260993.pt",
+    "20260994.pt",
+    "20260995.pt"
+  ],
+  "features": [
+    "hub_wind_speed_mps",
+    "air_density_kgm3",
+    "shear_exponent",
+    "theoretical_power_kw"
+  ],
+  "members": 5
+}

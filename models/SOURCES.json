@@ -1,0 +1,128 @@
+{
+  "models/era5/conditional_lstm_residual_h8_seed_20260907.pt": {
+    "sha256": "4ff8c61110bc06384a4706334c4238e82d45be792758a75cc0ce85b19b99d5a7",
+    "source": "outputs/training/history_lstm_v2/conditional_diagnostics/checkpoints/conditional_lstm_residual_h8_seed_20260907.pt"
+  },
+  "models/era5/conditional_lstm_residual_h8_seed_20260908.pt": {
+    "sha256": "d8fec76208e57e4cedbe3c97d4d589f5858f0e1c0abb06e51423818733636212",
+    "source": "outputs/training/history_lstm_v2/conditional_diagnostics/checkpoints/conditional_lstm_residual_h8_seed_20260908.pt"
+  },
+  "models/era5/conditional_lstm_residual_h8_seed_20260909.pt": {
+    "sha256": "547f443451d9063867ae7d022caecd4893c08daf96036b758be8d4ec7807477c",
+    "source": "outputs/training/history_lstm_v2/conditional_diagnostics/checkpoints/conditional_lstm_residual_h8_seed_20260909.pt"
+  },
+  "models/gfs/20260991.pt": {
+    "sha256": "c89e1941fa4f196283ac326e1a83a65008cb0db50e74938ddfb5dd4ec49c5b01",
+    "source": "outputs/training/issued_lstm_v4/model/refit/physics/20260991.pt"
+  },
+  "models/gfs/20260992.pt": {
+    "sha256": "dd6627f62e48e75accc372f141276bf4908bc07872095d761ff33ba1dc32713f",
+    "source": "outputs/training/issued_lstm_v4/model/refit/physics/20260992.pt"
+  },
+  "models/gfs/20260993.pt": {
+    "sha256": "9422a60fc762be4841f4b601856434b350ed79bc33ed34d9f72f2f9898202dc2",
+    "source": "outputs/training/issued_lstm_v4/model/refit/physics/20260993.pt"
+  },
+  "models/gfs/20260994.pt": {
+    "sha256": "a26bc073d1e07e028e35590419596c279381860aed82b9433eeeb51efd1fc474",
+    "source": "outputs/training/issued_lstm_v4/model/refit/physics/20260994.pt"
+  },
+  "models/gfs/20260995.pt": {
+    "sha256": "114586b9b707719c8be00ea3229d1a5e7daa8459ffc920b9271c0c0d53d5b582",
+    "source": "outputs/training/issued_lstm_v4/model/refit/physics/20260995.pt"
+  },
+  "models/weather/h16_p4_bi1_seed20260910.pt": {
+    "sha256": "30188c9ab22e4e4bb62ca7a3bf16a133f2c600c0ca76e20e6abff05398855359",
+    "source": "outputs/training/strict_lstm_v5/weather_year2023/h16_p4_bi1_seed20260910.pt"
+  },
+  "models/weather/h16_p4_bi1_seed20260911.pt": {
+    "sha256": "efae05996f873015dfa30416da7aea53e6f6090fe340db08a695c9c6aa9a99d4",
+    "source": "outputs/training/strict_lstm_v5/weather_year2023/h16_p4_bi1_seed20260911.pt"
+  },
+  "models/weather/h16_p4_bi1_seed20260912.pt": {
+    "sha256": "82d664bac5dc137e1e2061e99abfe78668e5ea036b7a2479837c464ba7592f99",
+    "source": "outputs/training/strict_lstm_v5/weather_year2023/h16_p4_bi1_seed20260912.pt"
+  },
+  "models/power/h16_bi1_seed20260910.pt": {
+    "sha256": "788c8bc2418aa9255a8b7de9ec48dae5f7d23dcbad0be3788ddc5118df2061d8",
+    "source": "outputs/training/strict_lstm_v5/power_year2023/h16_bi1_seed20260910.pt"
+  },
+  "models/power/h16_bi1_seed20260911.pt": {
+    "sha256": "f6bf033e8fb60b63741cad2f137f9f06ecf23c6bb71628f18de0f7e4a8d79691",
+    "source": "outputs/training/strict_lstm_v5/power_year2023/h16_bi1_seed20260911.pt"
+  },
+  "models/power/h16_bi1_seed20260912.pt": {
+    "sha256": "5af867faf6fecd7744a0743ede87fc0546ade31fc5de7603040582f060052b46",
+    "source": "outputs/training/strict_lstm_v5/power_year2023/h16_bi1_seed20260912.pt"
+  },
+  "data/native_train.npz": {
+    "sha256": "5f72df38406a3d8d921a63b57219e97fa4eb88122b72e5d51a3cb5adc3f83460",
+    "source": "data/processed/gfs_native_v5/year2023.npz"
+  },
+  "data/native_test.npz": {
+    "sha256": "84d66d15c65f86e9d0bf12a191dadc53777a73bd31df493a2d7eae401d16ca23",
+    "source": "data/processed/gfs_native_v5/development.npz"
+  },
+  "data/expected_weather.csv": {
+    "sha256": "d2e543fbbdfce8c8f87d83dfe6ad8fdd2780405bae10b0777c45c68046b336f7",
+    "source": "outputs/training/strict_lstm_v5/development_year2023/predictions.csv",
+    "source_sha256": "5c04f58513f8fbcea90e7c930bd044a64c937ecfc46b991c702932d1f1649017",
+    "transformation": "Retain selected LSTM route, target identity and ERA5 baseline only"
+  },
+  "results/reference_weather_metrics.json": {
+    "sha256": "8e695bbdc18b27c90440eae8612576fb9ab38b54589148d9c3be1c0247640721",
+    "source": "outputs/training/strict_lstm_v5/development_year2023/metrics.json",
+    "source_sha256": "aae8125c3899949618953e432930562cc921d9eb78758b84d991e1c195543fc3",
+    "transformation": "Retain selected LSTM route, target identity and ERA5 baseline only"
+  },
+  "data/expected_power.csv": {
+    "sha256": "51b3baf4b32806222ae517bc89ff1abb7dff16e28c1ac23ef0f63867619aa606",
+    "source": "outputs/training/strict_lstm_v5/development_power_year2023/predictions.csv",
+    "source_sha256": "87eebcdf2a16597e840ddfb4780c73f50ddb1a54428c2fba5e88b600b13115d6",
+    "transformation": "Retain selected LSTM route, target identity and ERA5 baseline only"
+  },
+  "results/reference_power_metrics.json": {
+    "sha256": "ff0fbcca6ade0c2748c537ab4d3661d30f2e85f25a1b89113aa80b0a4566771f",
+    "source": "outputs/training/strict_lstm_v5/development_power_year2023/metrics.json",
+    "source_sha256": "7dbed1d527f661de0af00348b26ee0e15f4a6db16fbf175cb754f8b9762a8dbe",
+    "transformation": "Retain selected LSTM route, target identity and ERA5 baseline only"
+  },
+  "examples/native_24h.csv": {
+    "sha256": "b680867cee9faa4432fbe8c16eabb06385115a8459777fa103bd0c7bb419a268",
+    "source": "outputs/training/strict_lstm_v5/example_input.csv"
+  },
+  "results/reference_predictions.csv": {
+    "sha256": "365592f1bf8c9562884f7db98fb0e9cffc611f12d17ee6a7c03f3397e94709be",
+    "source": "outputs/analysis/weather_attribution_20261018_final/predictions.csv"
+  },
+  "results/reference_summary.json": {
+    "sha256": "49389bf8f8380461f6cd3302a18aec2f45bdeb0a712aa9afab996c0d527c622e",
+    "source": "outputs/analysis/weather_attribution_20261018_final/summary.json"
+  },
+  "data/openfast_2024.csv": {
+    "sha256": "3680450a288deeaf586a841d1576f092b9152b1cc2189d726347f40e7aab4440",
+    "source": "data/processed/independent_test_2024/labels.csv",
+    "transformation": "Remove raw_output path; numeric values retained"
+  },
+  "data/openfast_2023.csv": {
+    "sha256": "b72769b817fb4eb8957cd9f34c6f2ca2664b407474cfa5bf00efa3c77ac8768c",
+    "source": "data/processed/openfast_labels.csv",
+    "transformation": "Remove raw_output path; numeric values retained"
+  },
+  "data/era5_2023.csv": {
+    "sha256": "8a899c5674d7c1a9978f4e37146ae97740037d0a9f688c9fc7af59839265318e",
+    "source": "data/raw/era5/era5_sites_2023.csv"
+  },
+  "data/era5_2024.csv": {
+    "sha256": "d03f95610c47d289821af0cf541d292801684ff1ada2a09d35edf099144b0e73",
+    "source": "data/raw/independent_test_2024/era5_sites_2024.csv"
+  },
+  "data/gfs_raw_2023.csv": {
+    "sha256": "0ca894056c63f4ffc63efe221cb89f0bdbe8c2d035807013ad5ebcccdde7a162",
+    "source": "data/processed/gfs_daily_2023/raw_forecasts_long.csv"
+  },
+  "data/gfs_raw_2024.csv": {
+    "sha256": "b6e74b51ed9e31e2dcb090f9d187ebcfdf2e2ba1ea89bfac388a1a6309aa622d",
+    "source": "data/processed/gfs_daily_2024/raw_forecasts_long.csv"
+  }
+}

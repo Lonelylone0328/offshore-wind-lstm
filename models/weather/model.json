@@ -1,0 +1,11 @@
+{
+  "route": "weather",
+  "checkpoints": [
+    "h16_p4_bi1_seed20260910.pt",
+    "h16_p4_bi1_seed20260911.pt",
+    "h16_p4_bi1_seed20260912.pt"
+  ],
+  "members": 3,
+  "hidden_size": 16,
+  "bidirectional": true
+}

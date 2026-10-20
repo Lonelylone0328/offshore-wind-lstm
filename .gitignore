@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.env
+.cdsapirc
+runs/
+vendor/
+build/
+dist/
+data/downloads/
+data/download-cache/
+data/simulation/
+*.log

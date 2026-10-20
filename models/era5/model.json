@@ -1,0 +1,15 @@
+{
+  "kind": "era5",
+  "checkpoints": [
+    "conditional_lstm_residual_h8_seed_20260907.pt",
+    "conditional_lstm_residual_h8_seed_20260908.pt",
+    "conditional_lstm_residual_h8_seed_20260909.pt"
+  ],
+  "features": [
+    "hub_wind_speed_mps",
+    "air_density_kgm3",
+    "shear_exponent",
+    "theoretical_power_kw"
+  ],
+  "members": 3
+}

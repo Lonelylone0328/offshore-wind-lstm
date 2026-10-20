@@ -1,0 +1,191 @@
+{
+  "analysis_type": "retrospective_frozen_pipeline_source_attribution",
+  "training_performed": false,
+  "analysis_date_shanghai": "2026-10-18",
+  "true_weather_error_identifiable": false,
+  "reference_power": "ERA5-driven OpenFAST 600s mean",
+  "overall": {
+    "points": 672,
+    "origins": 28,
+    "unique_target_hours": 672,
+    "metrics": {
+      "B_E": {
+        "model": "empirical",
+        "weather": "ERA5",
+        "points": 672,
+        "mse_kw2": 32785.61647889528,
+        "rmse_kw": 181.06798855373438,
+        "mae_kw": 106.465779178771,
+        "bias_kw": 83.02331061696307,
+        "rmse_saving_kw": 0.0,
+        "same_weather_improvement_percent": 0.0
+      },
+      "B_G": {
+        "model": "empirical",
+        "weather": "GFS",
+        "points": 672,
+        "mse_kw2": 1356954.2808560205,
+        "rmse_kw": 1164.883805731722,
+        "mae_kw": 703.2885626681862,
+        "bias_kw": 64.65969682588485,
+        "rmse_saving_kw": 0.0,
+        "same_weather_improvement_percent": 0.0
+      },
+      "F_EE": {
+        "model": "ERA5_trained_LSTM",
+        "weather": "ERA5",
+        "points": 672,
+        "mse_kw2": 12026.237218300477,
+        "rmse_kw": 109.66420208208547,
+        "mae_kw": 66.5181584943235,
+        "bias_kw": 27.852809718471413,
+        "rmse_saving_kw": 71.40378647164891,
+        "same_weather_improvement_percent": 39.434792997912425
+      },
+      "F_EG": {
+        "model": "ERA5_trained_LSTM",
+        "weather": "GFS",
+        "points": 672,
+        "mse_kw2": 1301782.4516298312,
+        "rmse_kw": 1140.9568140950082,
+        "mae_kw": 687.7459494212698,
+        "bias_kw": 17.27247596227718,
+        "rmse_saving_kw": 23.926991636713865,
+        "same_weather_improvement_percent": 2.0540238879605766
+      },
+      "F_GE": {
+        "model": "GFS_trained_LSTM",
+        "weather": "ERA5",
+        "points": 672,
+        "mse_kw2": 92379.23171265757,
+        "rmse_kw": 303.93951982698394,
+        "mae_kw": 244.61353635451445,
+        "bias_kw": -230.68690197137116,
+        "rmse_saving_kw": -122.87153127324956,
+        "same_weather_improvement_percent": -67.8593340847688
+      },
+      "F_GG": {
+        "model": "GFS_trained_LSTM",
+        "weather": "GFS",
+        "points": 672,
+        "mse_kw2": 1244538.2021843244,
+        "rmse_kw": 1115.5887244788396,
+        "mae_kw": 731.0429891425615,
+        "bias_kw": -229.3969195676983,
+        "rmse_saving_kw": 49.29508125288248,
+        "same_weather_improvement_percent": 4.231759512007105
+      }
+    },
+    "mse_source_decomposition": {
+      "empirical": {
+        "era5_mse_kw2": 32785.61647889528,
+        "gfs_mse_kw2": 1356954.2808560205,
+        "mse_increase_kw2": 1324168.6643771252,
+        "source_shift_mse_kw2": 1401995.0928732306,
+        "source_shift_rmse_kw": 1184.0587370874937,
+        "interaction_kw2": -77826.4284961055,
+        "closure_residual_kw2": 1.3096723705530167e-10
+      },
+      "ERA5_trained_LSTM": {
+        "era5_mse_kw2": 12026.237218300477,
+        "gfs_mse_kw2": 1301782.4516298312,
+        "mse_increase_kw2": 1289756.2144115306,
+        "source_shift_mse_kw2": 1334817.0507421878,
+        "source_shift_rmse_kw": 1155.3428282298669,
+        "interaction_kw2": -45060.836330657185,
+        "closure_residual_kw2": 5.820766091346741e-11
+      },
+      "GFS_trained_LSTM": {
+        "era5_mse_kw2": 92379.23171265757,
+        "gfs_mse_kw2": 1244538.2021843244,
+        "mse_increase_kw2": 1152158.970471667,
+        "source_shift_mse_kw2": 1139129.0879790823,
+        "source_shift_rmse_kw": 1067.2999053588837,
+        "interaction_kw2": 13029.882492584626,
+        "closure_residual_kw2": 1.6370904631912708e-11
+      }
+    },
+    "gain_gap_decomposition": {
+      "defined": true,
+      "total_gap_pp": 35.20303348590532,
+      "weather_source_pp": -17.35516224341203,
+      "frozen_model_pp": 52.55819572931735,
+      "weather_effect_with_era5_model_pp": 37.38076910995185,
+      "weather_effect_with_gfs_model_pp": -72.0910935967759,
+      "model_effect_with_era5_pp": 107.29412708268123,
+      "model_effect_with_gfs_pp": -2.177735624046529,
+      "factor_interaction_pp": 109.47186270672776,
+      "weather_share_of_gap_percent": -49.300189571335466,
+      "model_share_of_gap_percent": 149.30018957133547,
+      "closure_residual_pp": 0.0
+    },
+    "denominator_decomposition": {
+      "defined": true,
+      "era5_absolute_saving_kw": 71.40378647164891,
+      "gfs_absolute_saving_kw": 49.29508125288248,
+      "absolute_saving_change_pp": 7.05405001184691,
+      "baseline_denominator_change_pp": 28.148983474058415,
+      "total_gap_pp": 35.20303348590532,
+      "closure_residual_pp": -3.552713678800501e-15
+    }
+  },
+  "historical_comparison": {
+    "original_era5_points": 13920,
+    "original_era5_origins": 580,
+    "original_era5_report_gain_percent": 40.07232556392848,
+    "original_gfs_report_gain_percent": 4.231759512007105,
+    "era5_full_windows_authoritative_labels_gain_percent": 40.072323707214686,
+    "era5_matched_csv_gain_percent": 39.434795464011884,
+    "era5_matched_replay_gain_percent": 39.434792997912425,
+    "gfs_matched_replay_gain_percent": 4.231759512007105,
+    "original_report_gap_pp": 35.84056605192137,
+    "window_protocol_contribution_pp": 0.6375282432028015,
+    "label_and_serialization_precision_contribution_pp": 4.32281325402073e-06,
+    "weather_source_contribution_pp": -17.35516224341203,
+    "frozen_model_contribution_pp": 52.55819572931735,
+    "original_gap_closure_residual_pp": 0.0,
+    "note": "Window term includes target weighting and sequence-origin/lead context, not weather error"
+  },
+  "weather_differences": [
+    {
+      "feature": "hub_wind_speed_mps",
+      "unit": "m/s",
+      "points": 672,
+      "gfs_minus_era5_rmse": 2.11603338805986,
+      "gfs_minus_era5_mae": 1.482566019608861,
+      "gfs_minus_era5_bias": 0.031226670103413717
+    },
+    {
+      "feature": "air_density_kgm3",
+      "unit": "kg/m^3",
+      "points": 672,
+      "gfs_minus_era5_rmse": 0.0055206401188833305,
+      "gfs_minus_era5_mae": 0.004176871980180165,
+      "gfs_minus_era5_bias": 0.0026791852619082526
+    },
+    {
+      "feature": "shear_exponent",
+      "unit": "dimensionless",
+      "points": 672,
+      "gfs_minus_era5_rmse": 0.061163241204330934,
+      "gfs_minus_era5_mae": 0.0374263923066727,
+      "gfs_minus_era5_bias": 0.0011657992555293667
+    },
+    {
+      "feature": "theoretical_power_kw",
+      "unit": "kW",
+      "points": 672,
+      "gfs_minus_era5_rmse": 1184.0587370874937,
+      "gfs_minus_era5_mae": 695.3243106586486,
+      "gfs_minus_era5_bias": -18.36361379107825
+    }
+  ],
+  "limitations": [
+    "No independent observed weather or measured turbine power",
+    "Input source includes spatial/temporal processing and baseline denominator changes",
+    "Model factor includes training coverage, hyperparameters, seeds and ensemble size",
+    "ERA5 shares forcing with reference; cross-source cells are diagnostic",
+    "Only four 7-day seasonal blocks; no annual confidence or causal identification",
+    "Already-used 2024 data; not a new blind test"
+  ]
+}
