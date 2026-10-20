@@ -35,7 +35,7 @@ git clone https://github.com/Lonelylone0328/offshore-wind-lstm.git
 cd offshore-wind-lstm
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
+python -m pip install -e '.[dev]' -c requirements-repro.txt
 ```
 
 先运行随仓库提供的 24 小时样例：
@@ -189,7 +189,7 @@ python -m pytest -q
 
 测试覆盖物理计算、主模型与全年订正模型的逐点复现、训练权重重载、24小时时间配对、六组评价和误差分解。发布整理时，主模型四格推理及两套主模型完整重训均与原结果逐点一致；全年订正推理差异小于 `1e-9 kW`。仿真接口通过固定模板工况准备和已有 OpenFAST 输出统计复核，未重新运行整批仿真。
 
-验证环境：Python 3.12、PyTorch 2.14、NumPy 2.5、pandas 3.0，CPU。
+验证环境：Python 3.12、PyTorch 2.14.0、NumPy 2.5.2、pandas 3.0.5，CPU。`requirements-repro.txt` 固定这三项计算依赖的验证版本。
 
 ## 数据来源
 
