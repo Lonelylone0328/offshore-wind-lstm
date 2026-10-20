@@ -12,7 +12,7 @@ dependencies = ["numpy>=2,<3", "pandas>=2.2,<4", "torch>=2.5,<3"]
 
 [project.optional-dependencies]
 download = ["xarray>=2025.1", "icechunk>=2.2", "zarr>=3.1", "pcodec", "scipy>=1.14", "requests>=2.32", "eccodes>=2.40"]
-dev = ["pytest>=8", "ruff>=0.9"]
+dev = ["pytest>=8", "ruff>=0.9", "requests>=2.32"]
 
 [project.scripts]
 windpower = "windpower.cli:main"
